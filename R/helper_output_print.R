@@ -158,6 +158,8 @@ output_print <- function(n_covariates,
         
         if (!is.na(sdx) && !is.na(sdy) && !is.na(R2) && n_covariates != 0) {
             
+            cat("Unconditional ITCV:")
+            cat("\n")
             cat("The minimum impact of an omitted variable to invalidate an inference for")
             cat("\n")
             cat(paste0("a null hypothesis of an effect of nu (", nu, ") is based on a correlation of ", round(rycv, 3)))
@@ -173,6 +175,8 @@ output_print <- function(n_covariates,
             cat(paste0(round(rxcv, 3), " X ", round(rycv, 3), " = ", round(rxcv * rycv, 3), " to invalidate an inference for a null hypothesis of an effect of nu (", nu, ").\n", sep = ""))
             cat("\n")
             
+            cat("Conditional ITCV:")
+            cat("\n")
         }
         
       cat("The minimum impact of an omitted variable to invalidate an inference for")
@@ -193,6 +197,8 @@ output_print <- function(n_covariates,
         
         if (!is.na(sdx) && !is.na(sdy) && !is.na(R2) && n_covariates != 0) {
         
+            cat("Unconditional ITCV:")
+            cat("\n")
             cat("The minimum (in absolute value) impact of an omitted variable to invalidate")
             cat("\n")
             cat(paste0("an inference for a null hypothesis of an effect of nu (", nu, ") is based on"))
@@ -208,6 +214,9 @@ output_print <- function(n_covariates,
             cat(paste0(round(rxcv, 3), " X ", round(rycv, 3), " = ", round(rxcv * rycv, 3), " to invalidate an inference for a null hypothesis of an effect of nu (", nu, ").\n", sep = ""))
             cat("\n")
             
+            cat("Conditional ITCV:")
+            cat("\n")
+
         }
         
       cat("The minimum (in absolute value) impact of an omitted variable to invalidate")
@@ -230,6 +239,8 @@ output_print <- function(n_covariates,
         
         if (!is.na(sdx) && !is.na(sdy) && !is.na(R2) && n_covariates != 0) {
         
+            cat("Unconditional ITCV:")
+            cat("\n")
             cat("The maximum impact (in absolute value) of an omitted variable to sustain")
             cat("\n")
             cat(paste0("an inference for a null hypothesis of an effect of nu (", nu, ") is based on"))
@@ -247,6 +258,9 @@ output_print <- function(n_covariates,
             cat(paste0(round(rxcv, 3), " X ", round(rycv, 3), " = ", round(rxcv * rycv, 3), " to sustain an inference for a null hypothesis of an effect of nu (", nu, ").\n", sep = ""))
             cat("\n")
             
+            cat("Conditional ITCV:")
+            cat("\n")
+
             }
       cat("The maximum impact (in absolute value) of an omitted variable to sustain")
       cat("\n")
@@ -268,6 +282,8 @@ output_print <- function(n_covariates,
         
         if (!is.na(sdx) && !is.na(sdy) && !is.na(R2) && n_covariates != 0) {
         
+            cat("Unconditional ITCV:")
+            cat("\n")
             cat("The maximum impact of an omitted variable to sustain an inference for")
             cat("\n")
             cat(paste0("a null hypothesis of an effect of nu (", nu, ") is based on a correlation of ", round(rycv, 3)))
@@ -283,6 +299,8 @@ output_print <- function(n_covariates,
             cat(paste0(round(rxcv, 3), " X ", round(rycv, 3), " = ", round(rxcv * rycv, 3), " to sustain an inference for a null hypothesis of an effect of nu (", nu, ").\n", sep = ""))
             cat("\n")
             
+            cat("Conditional ITCV:")
+            cat("\n")
             }
         
       cat("The maximum impact of an omitted variable to sustain an inference for")
